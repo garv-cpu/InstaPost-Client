@@ -15,7 +15,7 @@ const Dashboard = () => {
     setLoading(true); // ✅ start loading
 
     try {
-      const res = await fetch("http://localhost:5000/api/generate", {
+      const res = await fetch("https://insta-backend-puxz.onrender.com/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: input }),
